@@ -1,2 +1,3 @@
 This is a new text file.
 This is used to work with commiting and pushing
+This is a pull test
