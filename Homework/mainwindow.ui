@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>880</width>
-    <height>638</height>
+    <width>636</width>
+    <height>294</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,40 +17,79 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>460</y>
-      <width>89</width>
-      <height>25</height>
+      <x>10</x>
+      <y>220</y>
+      <width>80</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>do not kill</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QCheckBox" name="checkBox">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>510</y>
-      <width>89</width>
-      <height>25</height>
+      <x>70</x>
+      <y>120</y>
+      <width>60</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Didn't?</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QCheckBox" name="checkBox_2">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>240</y>
-      <width>89</width>
-      <height>25</height>
+      <x>10</x>
+      <y>120</y>
+      <width>60</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Did?</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>No</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Yes</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>23</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>kill</string>
     </property>
    </widget>
   </widget>
@@ -59,10 +98,18 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>880</width>
-     <height>22</height>
+     <width>636</width>
+     <height>19</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuDone">
+    <property name="title">
+     <string>Done</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+   </widget>
+   <addaction name="menuDone"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -73,6 +120,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
